@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     --color-marron: #7F6E4A;
     --color-amarillo: #E6EFD0;
     --color-verdeOscuro: #567661;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
@@ -21,7 +24,32 @@
 #contenedorCabecera-Menu {
     width: 100%;
     height: 50px;
-    background-color: black;
+    display: table;
+}
+
+#contenedorCabecera-Menu a{
+    text-decoration: none;
+    color: var(--color-verdeOscuro);
+    line-height: 30px;
+}
+
+.lista {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+.componente-lista {
+    display: inline-block;
+    padding: 0 10px;
+    width: 200px;
+    height: 30px;
+}
+
+.componente-lista:hover {
+    background-color: var(--color-marron);
+    color: white;
 }
 
 #logotipoCabecera {
