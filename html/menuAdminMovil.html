@@ -1,0 +1,76 @@
+<script type="text/javascript">
+
+    var estado = true;
+    var div = document.getElementById("menuAdminMovilSubmenu");
+    div.style.transitionDuration = "0.7s";
+    function comprobarEstado() {
+        return estado;
+    }
+
+    function extender() {
+        if(screen.width > 1300) {
+            div.style.transform = "translate(0,730px)";
+        } else {
+            div.style.transform = "translate(0,570px)";
+        }
+
+        document.getElementById("imgCamb").src = "./images/close.svg";
+        estado = false;
+    }
+    function encoger() {
+        div.style.transform = "translate(0,-50px)";
+        document.getElementById("imgCamb").src = "./images/barras.svg";
+        estado = true;
+    }
+</script>
+<div id="menuAdminMovil">
+    <div class="mList">
+        <div class="mListImg">
+            <a onclick=" let estado = comprobarEstado(); if(estado){
+                extender();} else{encoger();};return false;" href=""><img id="imgCamb" class="eImgM" src="./images/barras.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a id="enlace" onclick=" let estado = comprobarEstado(); if(estado){
+                extender();} else{encoger();};return false;" href=""><span>Menú</span></a>
+        </div>
+    </div>
+</div> <hr>
+<div id="menuAdminMovilSubmenu">
+    <div class="mList2">
+        <div class="mListImg">
+            <a><img class="eImgM2" src="./images/users.svg"></a> 
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Gestionar usuarios</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a><img class="eImgM2" src="./images/pimiento.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Gestionar productos</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a><img class="eImgM2" src="./images/informes.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Informes</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a><img class="eImgM2" src="./images/exit.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Salir</span></a>
+        </div>
+    </div> 
+</div>
+
+
+
+
+

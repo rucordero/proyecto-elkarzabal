@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-marron: #7F6E4A;
+    --color-amarillo: #E6EFD0;
+    --color-verdeOscuro: #567661;
+}
+
+/*AQUÍ COMIENZA LA PARTE DE LA WEB CLIENTE*/
+#contenedorCabecera {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+}
+
+#contenedorCabecera-Sup {
+    width: 100%;
+    height: 150px;
+}
+
+#contenedorCabecera-Menu {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+#logotipoCabecera {
+    width: 450px;
+    height: 100%;
+}
+
+#logotipo {
+    width: 90%;
+    height: auto;
+    margin: 15px 15px;
+}
+
+#iconoAdmin {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -150px;
+}
+
+#icono {
+    width: 10%;
+    height: auto;
+    transform: rotate(17.26deg);
+    margin-top: 50px;
+}
+
+#span-Admin {
+    color: var(--color-marron);
+    font-weight: bold;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 10px;
+}
+/*AQUÍ CONCLUYE LA PARTE DE LA WEB CLIENTE*/
+
+
+/*AQUÍ COMIENZA LA PARTE DE LA APP ADMINISTRACIÓN*/
+/*AQUÍ COMIENZAN LOS ESTILOS DEL MENÚ LATERAL DE ADMINISTRADOR*/
+#menuAdmin {
+    height: 100vh;
+    width: 100px;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 9999;
+}
+
+.cList {
+    width: 100%;
+    height: 50px;
+    margin-top: 43px;
+}
+
+.cListImg {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.eImg {
+    height: 100%;
+    width: auto;
+}
+
+#menuAdmin-Submenu {
+    height: 100vh;
+    width: 300px;
+    margin-left: -200px;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 1;
+}   
+
+.tList {
+    width: 60%;
+    height: 50px;
+    margin-top: 43px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.tList span {
+    line-height: 50px;
+    color: white;
+}
+
+.tList a {
+    text-decoration: none;
+}
+/*AQUÍ TERMINAN LOS ESTILOS DEL MENU LATERAL ADMINISTRADOR*/
+
+/*AQUÍ COMIENZAN LOS ESTILOS DEL MENU SUPERIOR ADMINISTRADOR*/
+#menuAdminMovil {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 9999;
+}
+
+#enlace {
+    text-decoration: none;
+}
+
+.mList {
+    width: 100%;
+    height: 80%;
+}
+
+.mList2 {
+    width: 100%;
+    height: 120px;
+}
+
+.eImgM {
+    width: 10%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.eImgM2 {
+    width: 10%;
+    height: auto;
+    margin-top: 120px;
+}
+
+.etiqueta {
+    width: auto;
+    height: 100%;
+    margin-top: -115px;
+    margin-left: 120px;
+    position: absolute;
+    font-size: 50px;
+}
+
+.etiqueta span {
+    line-height: 120px;
+    color: white;
+    font-weight: bold;
+}
+
+#menuAdminMovilSubmenu {
+    height: 700px;
+    width: 100%;
+    margin-top: -570px;
+    position: absolute;
+    background-color: var(--color-marron);
+    z-index: 1;
+}
+
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #menuAdminMovil {
+        height: 170px;
+    }
+
+    .mList2 {
+        height: 180px;
+    }
+
+    #menuAdminMovilSubmenu {
+        height: 900px;
+        margin-top: -720px;
+    }
+
+    .eImgM2 {
+        margin-top: 160px;
+    }
+
+    .etiqueta {
+        width: auto;
+        height: 100%;
+        margin-top: -115px;
+        margin-left: 140px;
+        position: absolute;
+        font-size: 50px;
+    }
+}
+/*AQUÍ TERMINAN LOS ESTILOS DEL MENU SUPERIOR ADMINISTRADOR*/
+/*AQUÍ CONCLUYE LA PARTE DE LA APP DE ADINSITRACIÓN*/
