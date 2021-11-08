@@ -1,11 +1,18 @@
 $(document).ready(function(){
     let movil = isMobile();
-    if(movil){
+    let ancho = $( window ).width();
+
+    if(movil && ancho<=980){
         $("#menuAdministracion").load("html/menuAdminMovil.html");   
     } else {
         $("#menuAdministracion").load("html/menuAdminLateral.html");   
     }
-    $("#cabecera").load("html/cabeceraWeb.html");   
+    if(movil && ancho<=980){
+        $("#cabecera").load("html/cabeceraWebMovil.html");  
+    } else {
+        $("#cabecera").load("html/cabeceraWeb.html");  
+    }
+  
 })
 
 function isMobile() {

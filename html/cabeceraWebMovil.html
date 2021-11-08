@@ -1,0 +1,79 @@
+<script type="text/javascript">
+
+    var estado = true;
+    var div = document.getElementById("menuAdminMovilSubmenu");
+    div.style.transitionDuration = "0.7s";
+    function comprobarEstado() {
+        return estado;
+    }
+
+    function extender() {
+        if(screen.width > 1300) {
+            div.style.transform = "translate(0,730px)";
+        } else {
+            div.style.transform = "translate(0,820px)";
+        }
+
+        document.getElementById("imgCamb").src = "./images/close.svg";
+        estado = false;
+    }
+    function encoger() {
+        div.style.transform = "translate(0,-50px)";
+        document.getElementById("imgCamb").src = "./images/barras.svg";
+        estado = true;
+    }
+</script>
+<div id="logotipoCabeceraMovil"><a href="index.html"><img id="logotipo" src="./images/logo-elkarzabal.svg"></a></div>
+
+<div class="nivelInferior" id="menuAdminMovil">
+    <div id="iconoAdminMovil"><a class="sinDecoracion" href="adminApp.html"><img id="iconoMovil" src="./images/zanahoria.svg"><span id="span-AdminMovil">Iniciar sesión</span></a></div>
+    <div class="mList">
+        <div class="mListImg">
+            <a onclick=" let estado = comprobarEstado(); if(estado){
+                extender();} else{encoger();};return false;" href=""><img id="imgCamb" class="eImgM" src="./images/barras.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a id="enlace" onclick=" let estado = comprobarEstado(); if(estado){
+                extender();} else{encoger();};return false;" href=""><span>Menú</span></a>
+        </div>
+    </div>
+</div> <hr>
+<div class="nivelInferior2" id="menuAdminMovilSubmenu">
+    <div class="mList2">
+        <div class="mListImg">
+            <a class="oculto"><img class="eImgM2" src="./images/users.svg"></a> 
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Quiénes somos</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a class="oculto"><img class="eImgM2" src="./images/pimiento.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Nuestras instalaciones</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a class="oculto"><img class="eImgM2" src="./images/informes.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Haz tu pedido</span></a>
+        </div>
+    </div> 
+    <div class="mList2">
+        <div class="mListImg">
+            <a class="oculto"><img class="eImgM2" src="./images/exit.svg"></a>
+        </div><hr>
+        <div class="etiqueta"> 
+            <a><span>Contacto</span></a>
+        </div>
+    </div> 
+</div>
+
+
+
+
+
