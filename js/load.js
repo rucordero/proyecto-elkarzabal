@@ -9,10 +9,13 @@ $(document).ready(function(){
     }
     if(movil && ancho<=980){
         $("#cabecera").load("html/cabeceraWebMovil.html");  
+        $("#ventanaModal").load("html/modalInicioSesion.html");  
+        $("#ventanaModalUsuario").load("html/modalUsuario.html");  
     } else {
         $("#cabecera").load("html/cabeceraWeb.html");  
+        $("#ventanaModal").load("html/modalInicioSesion.html");  
+        $("#ventanaModalUsuario").load("html/modalUsuario.html");  
     }
-  
 })
 
 function isMobile() {
